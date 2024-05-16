@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E91FFFC-6209-42B1-BD63-716AADCE7B19}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BestSale</RootNamespace>
+    <AssemblyName>BestSale</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.1.28\lib\net461\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="view\Acceuil1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\Acceuil1.Designer.cs">
+      <DependentUpon>Acceuil1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\customerTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\customerTable.Designer.cs">
+      <DependentUpon>customerTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\BodyForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\BodyForm1.Designer.cs">
+      <DependentUpon>BodyForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\ConfirmationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\ConfirmationForm.Designer.cs">
+      <DependentUpon>ConfirmationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\CustomerForm.Designer.cs">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\ModelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\ModelForm.Designer.cs">
+      <DependentUpon>ModelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SaleCarDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaleCarDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="view\CarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\CarForm.Designer.cs">
+      <DependentUpon>CarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="view\Acceuil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\Acceuil.Designer.cs">
+      <DependentUpon>Acceuil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\Raport de vente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\Raport de vente.Designer.cs">
+      <DependentUpon>Raport de vente.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\Acceuil1.resx">
+      <DependentUpon>Acceuil1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\BodyForm1.resx">
+      <DependentUpon>BodyForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\CarForm.resx">
+      <DependentUpon>CarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\ConfirmationForm.resx">
+      <DependentUpon>ConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\CustomerForm.resx">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\customerTable.resx">
+      <DependentUpon>customerTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\ModelForm.resx">
+      <DependentUpon>ModelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\Acceuil.resx">
+      <DependentUpon>Acceuil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\Raport de vente.resx">
+      <DependentUpon>Raport de vente.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SaleCarDBDataSet.xsc">
+      <DependentUpon>SaleCarDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SaleCarDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SaleCarDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SaleCarDBDataSet.xss">
+      <DependentUpon>SaleCarDBDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\3d-car-with-vibrant-colors.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Carlib\Carlib.csproj">
+      <Project>{FDA988BA-30B3-44EC-97D8-AACC89A5E172}</Project>
+      <Name>Carlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\businessman-in-suit-head-vector-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\9082703.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\2150712268.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\car-1300629_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\luxurious-car-parked-highway-with-illuminated-headlight-sunset.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\medium-shot-people-shaking-hands.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\mini-coupe-high-speed-drive-road-with-front-lights.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\sports-car-races-through-dark-blurred-motion-generative-ai.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\white-offroader-jeep-parking.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
